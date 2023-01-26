@@ -42,7 +42,7 @@ const getData =()=>{
 }
   useEffect(() => {
     getData();
-    setTimer(4000);
+    setTimer(2000);
     return clearTimer();
   }, []);
   useEffect(() => {
@@ -79,6 +79,7 @@ const getData =()=>{
         <ListItem key={index} item={item} />
       )
       })}
+     {(!data || data.length === 0) && <p className='info'>-----No Data----</p>}
      {endOfPage && <p className='info'>-----No More Data----</p>}
      
     </div>
