@@ -16,7 +16,7 @@ function App() {
   const [endOfPage, setEndOfPage] = useState(false);
 
   let TimerRef:any= React.useRef();
-  const listInnerRef:any = React.useRef();
+ 
 
   const setTimer:any=(time:number)=>{
     TimerRef=setTimeout(()=>setLoader(false),time)
@@ -72,17 +72,14 @@ const getData =()=>{
   return (
     <div className="container">
 
-    {/* {console.log(data)} */}
-    {/* {console.log(page)} */}
-     <div onScroll={()=>console.log('p')}
-    ref={listInnerRef} className=""  >
+     <div onScroll={()=>console.log('p')} className="">
     
       {data && data.map((item:object,index:number)=>{
       return(
         <ListItem key={index} item={item} />
       )
       })}
-     {endOfPage && <p style={{textAlign:'center'}}>-----No More Data----</p>}
+     {endOfPage && <p className='info'>-----No More Data----</p>}
      
     </div>
 

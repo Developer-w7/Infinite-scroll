@@ -11,7 +11,7 @@ const ListItem: React.FC<CustomColorPickerProps> = ({
   const node=item.node;
   const options:any = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour:'numeric', minute:'numeric' };
   const date:string=new Date(node.last_update).toLocaleDateString('en-IN',options).toUpperCase()
-  console.log(node)
+ 
   return (
     
    <div>
