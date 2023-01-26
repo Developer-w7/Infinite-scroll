@@ -1,0 +1,35 @@
+.center-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container{
+  max-width: 800px;
+  padding:20px 15px 20px 15px;
+  margin:0 auto;
+}
+.item-card{
+  display: flex;
+  margin-bottom: 20px;
+
+}
+.item-card img{
+ width: 200px;
+ height: 140px;
+ object-fit: cover;
+ border-radius: 8px;
+}
+.item-content{
+ margin-left: 20px;
+ display: flex;
+ flex-direction: column;
+}
+.item-content h4{
+ color:rgb(38, 38, 38);
+ margin: 0;
+ margin-bottom: 10px;
+}
+.item-content span{
+ color:rgb(99, 99, 99)
+}
